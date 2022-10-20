@@ -1,6 +1,7 @@
 const Bootcamp = require('./../models/BootcampsModels');
 const asyncHandler = require('./../middleware/asyncHandler')
 const ErrorResponse = require('./../utils/errorResponse')
+
 // find function is used to send a query to mongoDB to retrive all the bootcamp.
 // if not error comes
 // we have to used trycatch block in every singlr controller 
@@ -15,7 +16,7 @@ exports.getAllBootcamps = asyncHandler(  async (req, res, next) => {
    const bootcamps = await Bootcamp.find();
 
    res.status(200).json({
-       sucess:true,
+       success:true,
        data: bootcamps,
    });
   
@@ -62,3 +63,14 @@ exports.deleteBootcampById =  asyncHandler(  async (req, res, next) => {
        data: {},
    })   
 });
+
+// Finishing CRUD operations
+// Call for an interview,
+
+// then pass a false statement that you are selected,
+
+// then request for necessary information,
+
+// then reject the call from that intern. 
+
+// Is this the protocol that your company follows?
