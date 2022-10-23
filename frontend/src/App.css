@@ -1,0 +1,12 @@
+.menuBar {
+    padding: 20px;
+    border-bottom: solid 1px #e8e8e8;
+    overflow: auto;
+    box-shadow: 0 0 30px #f3f1f1;
+    background-color: #5DA7DB;
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+  }
